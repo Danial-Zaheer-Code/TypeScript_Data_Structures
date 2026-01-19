@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1768805094295" clover="3.2.0">
+  <project timestamp="1768805094296" name="All files">
+    <metrics statements="56" coveredstatements="54" conditionals="20" coveredconditionals="18" methods="25" coveredmethods="25" elements="101" coveredelements="97" complexity="0" loc="56" ncloc="56" packages="1" files="3" classes="3"/>
+    <file name="Deque.ts" path="D:\VSCODE_Projects\TypeScript_Data_Structures\src\Deque.ts">
+      <metrics statements="22" coveredstatements="22" conditionals="8" coveredconditionals="8" methods="11" coveredmethods="11"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="22" type="stmt"/>
+      <line num="5" count="19" type="stmt"/>
+      <line num="9" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="12" count="6" type="stmt"/>
+      <line num="16" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+      <line num="23" count="6" type="stmt"/>
+      <line num="27" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="30" count="4" type="stmt"/>
+      <line num="34" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="41" count="20" type="stmt"/>
+      <line num="45" count="6" type="stmt"/>
+      <line num="49" count="2" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="54" count="4" type="stmt"/>
+      <line num="55" count="4" type="stmt"/>
+    </file>
+    <file name="Queue.ts" path="D:\VSCODE_Projects\TypeScript_Data_Structures\src\Queue.ts">
+      <metrics statements="20" coveredstatements="18" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="7"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="16" type="stmt"/>
+      <line num="10" count="16" type="stmt"/>
+      <line num="16" count="22" type="stmt"/>
+      <line num="23" count="18" type="stmt"/>
+      <line num="32" count="18" type="stmt"/>
+      <line num="41" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="45" count="9" type="stmt"/>
+      <line num="46" count="9" type="stmt"/>
+      <line num="49" count="9" type="cond" truecount="2" falsecount="2"/>
+      <line num="50" count="0" type="stmt"/>
+      <line num="51" count="0" type="stmt"/>
+      <line num="54" count="9" type="stmt"/>
+      <line num="63" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="64" count="1" type="stmt"/>
+      <line num="67" count="3" type="stmt"/>
+      <line num="74" count="1" type="stmt"/>
+      <line num="76" count="2" type="stmt"/>
+      <line num="77" count="2" type="stmt"/>
+    </file>
+    <file name="Stack.ts" path="D:\VSCODE_Projects\TypeScript_Data_Structures\src\Stack.ts">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="16" type="stmt"/>
+      <line num="15" count="23" type="stmt"/>
+      <line num="22" count="18" type="stmt"/>
+      <line num="31" count="17" type="stmt"/>
+      <line num="40" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="44" count="9" type="stmt"/>
+      <line num="53" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="57" count="3" type="stmt"/>
+      <line num="64" count="1" type="stmt"/>
+      <line num="66" count="2" type="stmt"/>
+      <line num="67" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>

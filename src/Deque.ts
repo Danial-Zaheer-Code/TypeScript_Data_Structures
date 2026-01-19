@@ -1,60 +1,52 @@
-export class Deque<T>{
-	private items : T[] = [];
-	private capacity = 100;
-	private head : number = 0;
-	private tail : number = 0;
-	private length : number = 0;
-	
-	pushFront(value : T){
-		
-	} 
+export class Deque<T> {
+	private items: T[] = [];
 
-	pushBack(value : T){
-		this.resizeIfFull();
-
+	pushBack(value: T): void {
 		this.items.push(value);
-		this.length++;
-		this.tail = this.tail === this.capacity ? 0 : this.tail + 1;
-	}
-	
-	private resizeIfFull() {
-		if(this.isFull()){
-			this.resize();
-		}
 	}
 
-	private isFull() : boolean{
-		return this.size() === this.capacity;
-	}
-
-	popBack() {
-		if(this.isEmpty()){
+	popBack(): T {
+		if (this.isEmpty()) {
 			throw new Deque.EmptyDequeError();
 		}
-
-		const item = this.items.pop();
-		this.length--;
-		this.tail = this.tail === 0 ? this.capacity : this.tail - 1;
+		return this.items.pop()!;
 	}
 
-
-	private resize() {
-
+	peekBack(): T {
+		if (this.isEmpty()) {
+			throw new Deque.EmptyDequeError();
+		}
+		return this.items[this.items.length - 1]!;
 	}
-	
+
+	pushFront(value: T): void {
+		this.items.unshift(value);
+	}
+
+	popFront(): T {
+		if (this.isEmpty()) {
+			throw new Deque.EmptyDequeError();
+		}
+		return this.items.shift()!;
+	}
+
+	peekFront(): T {
+		if (this.isEmpty()) {
+			throw new Deque.EmptyDequeError();
+		}
+		return this.items[0]!;
+	}
+
 	isEmpty(): boolean {
-		return this.size() === 0;
+		return this.items.length === 0;
 	}
 
-	size() : number {
-		return this.length;
+	size(): number {
+		return this.items.length;
 	}
 
-	clear() {
+	clear(): void {
 		this.items = [];
-		this.head = 0;
-		this.tail = 0;
-		this.length = 0;
 	}
 
 	static EmptyDequeError = class extends Error {
