@@ -1,3 +1,5 @@
+import { Deque } from "./Deque";
+
 /**
  * A generic Stack implementation.
  *
@@ -7,12 +9,13 @@
  */
 export class Stack<T> {
 	private items: T[] = [];
+	private deque : Deque<T> = new Deque<T>();
 
 	/**
 	 * Returns the number of elements in the stack.
 	 */
 	size(): number {
-		return this.items.length;
+		return this.deque.size();
 	}
 
 	/**
@@ -28,7 +31,7 @@ export class Stack<T> {
 	 * @param value - Element to push onto the stack
 	 */
 	push(value: T): void {
-		this.items.push(value);
+		this.deque.pushBack(value);
 	}
 
 	/**
@@ -41,7 +44,7 @@ export class Stack<T> {
 			throw new Stack.EmptyStackError();
 		}
 
-		return this.items.pop()!;
+		return this.deque.popBack();
 	}
 
 	/**
@@ -54,7 +57,7 @@ export class Stack<T> {
 			throw new Stack.EmptyStackError();
 		}
 
-		return this.items[this.items.length - 1]!;
+		return this.deque.peekBack();
 	}
 
 	/**
