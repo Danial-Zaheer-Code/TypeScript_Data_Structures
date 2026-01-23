@@ -8,22 +8,7 @@ import { Deque } from "./Deque";
  * @typeParam T - Type of elements stored in the stack
  */
 export class Stack<T> {
-	private items: T[] = [];
 	private deque : Deque<T> = new Deque<T>();
-
-	/**
-	 * Returns the number of elements in the stack.
-	 */
-	size(): number {
-		return this.deque.size();
-	}
-
-	/**
-	 * Checks whether the stack is empty.
-	 */
-	isEmpty(): boolean {
-		return this.size() === 0;
-	}
 
 	/**
 	 * Adds an element to the top of the stack.
@@ -58,6 +43,27 @@ export class Stack<T> {
 		}
 
 		return this.deque.peekBack();
+	}
+
+	/**
+	 * Checks whether the stack is empty.
+	 */
+	isEmpty(): boolean {
+		return this.size() === 0;
+	}
+
+	/**
+	 * Returns the number of elements in the stack.
+	 */
+	size(): number {
+		return this.deque.size();
+	}
+
+	/**
+	 * Clear all the elements from the stack.
+	 */
+	clear(): void {
+		this.deque.clear();
 	}
 
 	/**
