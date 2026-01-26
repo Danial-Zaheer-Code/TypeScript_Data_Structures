@@ -8,4 +8,4 @@ This repo is a library for TypeScript Data Structures.
 
 # Documentation
 ## Stack
-See Stack.md File.
+See Stack.md File in Documentation Folder.
