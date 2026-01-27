@@ -62,7 +62,7 @@ export class Queue<T> {
 	}
 
 	/**
-	 * Clear all the elements from the stack.
+	 * Clear all the elements from the queue.
 	 */
 	clear(){
 		this.deque.clear();
