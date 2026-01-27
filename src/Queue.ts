@@ -1,3 +1,5 @@
+import { Deque } from "./Deque";
+
 /**
  * A generic Queue implementation.
  *
@@ -8,20 +10,7 @@
 export class Queue<T> {
 	private items: T[] = [];
 	private head: number = 0;
-
-	/**
-	 * Returns the number of elements currently in the queue.
-	 */
-	size(): number {
-		return this.items.length - this.head;
-	}
-
-	/**
-	 * Checks whether the queue is empty.
-	 */
-	isEmpty(): boolean {
-		return this.size() === 0;
-	}
+	private deque: Deque<T> = new Deque();
 
 	/**
 	 * Adds an element to the back of the queue.
@@ -29,7 +18,7 @@ export class Queue<T> {
 	 * @param value - Element to add
 	 */
 	push(value: T): void {
-		this.items.push(value);
+		this.deque.pushBack(value);
 	}
 
 	/**
@@ -42,16 +31,7 @@ export class Queue<T> {
 			throw new Queue.EmptyQueueError();
 		}
 
-		const value = this.items[this.head];
-		this.head++;
-
-		// Reclaims unused space when the head grows large
-		if (this.head === 50 && this.head * 2 >= this.items.length) {
-			this.items = this.items.slice(this.head);
-			this.head = 0;
-		}
-
-		return value!;
+		return this.deque.popFront();
 	}
 
 	/**
@@ -64,7 +44,28 @@ export class Queue<T> {
 			throw new Queue.EmptyQueueError();
 		}
 
-		return this.items[this.head]!;
+		return this.deque.peekFront();
+	}
+
+	/**
+	 * Returns the number of elements currently in the queue.
+	 */
+	size(): number {
+		return this.deque.size();
+	}
+
+	/**
+	 * Checks whether the queue is empty.
+	 */
+	isEmpty(): boolean {
+		return this.size() === 0;
+	}
+
+	/**
+	 * Clear all the elements from the stack.
+	 */
+	clear(){
+		this.deque.clear();
 	}
 
 	/**
