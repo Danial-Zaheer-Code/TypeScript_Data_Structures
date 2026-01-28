@@ -8,4 +8,10 @@ This repo is a library for TypeScript Data Structures.
 
 # Documentation
 ## Stack
-See Stack.md File in Documentation Folder.
+See Stack.md file in Documentation folder.
+
+## Queue
+See Queue.md file in Documentation folder.
+
+## Deque
+See Deque.md file in Documentation folder.
