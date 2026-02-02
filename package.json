@@ -2,6 +2,7 @@
   "name": "typescript_data_structures",
   "version": "1.0.0",
   "description": "",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "jest"
