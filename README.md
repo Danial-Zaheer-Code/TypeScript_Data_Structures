@@ -14,9 +14,10 @@ Detailed documentation for each data structure is available in the `/docs` direc
 This project follows Semantic Versioning (SemVer):
 MAJOR.MINOR.PATCH (e.g., 1.0.0).
 
-## Contributing
+## Contribution Guidelines
 Contributions are welcome!  
 Please open an issue or submit a pull request for improvements or new data structures.
+Just remember to throughly test your code before opening a pull request.
 
 ## License
 
