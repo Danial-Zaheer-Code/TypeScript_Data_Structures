@@ -19,27 +19,36 @@ Detailed documentation for each data structure is available in the `/docs` direc
 
 You can install **danial-ts-containers** via npm, yarn, or pnpm:
 
+### Using npm
+
+ ```bash
+npm install danial-ts-containers
+```
+
+### Using yarn
+
 ```bash
-# Using npm
-npm install ts-collections
+yarn add danial-ts-containers
+```
 
-# Using yarn
-yarn add ts-collections
+### Using pnpm
 
-# Using pnpm
-pnpm add ts-collections
+```bash
+pnpm add danial-ts-containers
+```
 
 ### Usage
 Import the data structures you need in your TypeScript project:
 
 ```ts
-import { Stack, Queue, Deque } from "ts-collections";
+import { Stack, Queue, Deque } from "danial-ts-containers";
 
 // Example: Using Stack
 const stack = new Stack<number>();
 stack.push(10);
 stack.push(20);
 console.log(stack.pop()); // Output: 20
+```
 
 ### Notes
 
