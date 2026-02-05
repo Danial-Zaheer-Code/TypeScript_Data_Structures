@@ -1,6 +1,6 @@
 {
   "name": "danial-ts-containers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This repository provides a collection of reusable and well-tested data structures implemented in TypeScript. The goal of this project is to offer clean, generic, and easy-to-use implementations for learning and practical use.",
   "license": "MIT",
   "main": "index.js",
@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "test": "jest",
-	"build": "tsc"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
