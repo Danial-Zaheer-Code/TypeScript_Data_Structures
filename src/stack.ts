@@ -1,4 +1,4 @@
-import { Deque } from "./Deque";
+import { Deque } from "./Deque.js";
 
 /**
  * A generic Stack implementation.
