@@ -16,7 +16,7 @@ The goal of this project is to offer clean, generic, and easy-to-use implementat
 
 ## Documentation
 
-Detailed documentation for each data structure is available in the `/docs` directory.
+Detailed documentation for each data structure is available at: https://github.com/Danial-Zaheer-Code/danial-ts-containers/tree/main/docs.
 
 ## Installation
 
